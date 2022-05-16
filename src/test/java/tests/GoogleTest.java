@@ -12,6 +12,7 @@ public class GoogleTest {
         WebDriverManager.chromedriver().setup();
         WebDriver chromeDriver = new ChromeDriver();
         chromeDriver.get("https://google.com");
+        assert true;
         chromeDriver.quit();
     }
 }
