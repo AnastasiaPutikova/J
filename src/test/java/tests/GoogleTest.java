@@ -11,7 +11,7 @@ public class GoogleTest {
     public void check() {
         WebDriverManager.chromedriver().setup();
         WebDriver chromeDriver = new ChromeDriver();
-        chromeDriver.get("https://google.com");
+        chromeDriver.get(System.getProperty("url"));
         assert true;
         chromeDriver.quit();
     }
